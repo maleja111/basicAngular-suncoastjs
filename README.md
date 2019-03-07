@@ -31,6 +31,36 @@
 - Start service `ng serve`
 - Navigate to `http://localhost:4200/`
 
+# Reactive Form with componets and services 
+## Branch `feature/components-menu-footer-formUser` 
+## Creation of components
+
+We need to create 3 components
+- `ng generate component menu` 
+- `ng generate component footer`
+- `ng generate component form-users`
+
+## Branch `feature/add-styles-html` 
+## Styles and HTML
+
+- You can save time using these styles, just clone the branch
+
+## Branch `feature/reactive-form` 
+## Set the Reactive Form import in app.model
+
+- `import { ReactiveFormsModule } from '@angular/forms';`
+- Now you can add logic to the form
+
+## Branch `feature/services` 
+## We need add a service for our user data
+
+- Generate a new service`ng generate service user` 
+- Add the import in app.model
+
+- `import { UserService } from './services/user/user.service';`
+- Add as providers
+
+
  ## Notes
 
 - If you have this error `node_modules/rxjs/internal/types.d.ts(81,44): error TS1005: ';' expected error after installation of Angular 6`
