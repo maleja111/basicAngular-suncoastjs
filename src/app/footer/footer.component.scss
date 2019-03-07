@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+
+.main-footer{
+	display        : flex;
+  flex-direction : column;
+	justify-content: flex-end;
+	text-align: center;
+	background: $primary-color;
+	margin-top : auto;
+	padding: .5em;
+	color: $white;
+	a{
+		color: $white;
+	}
+}

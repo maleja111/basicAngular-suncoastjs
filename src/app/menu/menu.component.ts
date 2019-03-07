@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
-
+  showMenu;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  buttonMenu(event) {
+    if (event) {
+      this.showMenu = !this.showMenu;
+    }
   }
 
 }

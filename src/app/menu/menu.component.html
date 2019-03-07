@@ -1,3 +1,26 @@
-<p>
-  menu works!
-</p>
+<header class="main-header">
+  <div class="main-logo">
+    <img class="main-logo__img" src="https://pbs.twimg.com/profile_images/1057449615841214466/KXT83JRQ_bigger.jpg" alt="Logo">
+    <h1 class="main-logo__title">Basic Angular</h1>
+  </div>
+  <i id="button-menu" (click)="buttonMenu($event)" class="fa fa-bars"> Menú</i>
+  <nav class="main-nav" [class.opend]="showMenu">
+    <ul class="main-menu">
+      <li class="main-menu__item">
+        <a class="main-menu__link active" href="#">Home</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">About</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Services</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Portfolio</a>
+      </li>
+      <li class="main-menu__item">
+        <a class="main-menu__link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
