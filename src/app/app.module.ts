@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormUsersComponent } from './form-users/form-users.component';
+// Services
+import { UserService } from './services/user/user.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { FormUsersComponent } from './form-users/form-users.component';
     BrowserModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, AbstractControl, ValidatorFn, FormArray } from '@angular/forms';
+// Service
+import { UserService } from '../services/user/user.service';
 
 function emailMatcher(c: AbstractControl): { [key: string]: boolean } | null {
   const emailControl = c.get('email');
@@ -29,7 +31,9 @@ export class FormUsersComponent implements OnInit {
     email: 'Please enter a valid email address.'
   };
 
-  constructor(private fb: FormBuilder) { }
+  constructor(
+    private fb: FormBuilder,
+    private userService: UserService) { }
   ngOnInit() {
     this.customerForm = this.fb.group({
       firstName: ['', [Validators.required, Validators.minLength(3)]],
