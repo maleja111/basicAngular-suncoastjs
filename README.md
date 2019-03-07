@@ -25,13 +25,13 @@
 - Create your project 
 `ng new basicAngular`
 
-- Configure this options
+- Configure these options
 ![](/src/assets/images/install-options.png)
 
 - Start service `ng serve`
 - Navigate to `http://localhost:4200/`
 
-# Reactive Form with componets and services 
+# Reactive Form with components and services 
 ## Branch `feature/components-menu-footer-formUser` 
 ## Creation of components
 
@@ -54,7 +54,7 @@ We need to create 3 components
 ## Branch `feature/services` 
 ## We need add a service for our user data
 
-- Generate a new service`ng generate service user` 
+- Generate a new service `ng generate service user` 
 - Add the import in app.model
 
 - `import { UserService } from './services/user/user.service';`
