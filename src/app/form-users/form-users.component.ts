@@ -71,6 +71,7 @@ export class FormUsersComponent implements OnInit {
 
   save() {
     console.log('Saved: ' + JSON.stringify(this.customerForm.value));
+    this.saveUser(this.customerForm.value);
   }
 
   setMessage(c: AbstractControl): void {
@@ -80,6 +81,11 @@ export class FormUsersComponent implements OnInit {
       this.emailMessage = Object.keys(c.errors).map(
         key => this.emailMessage += this.validationMessages[key]).join(' ');
     }
+  }
+
+  saveUser(data) {
+    this.userService.saveUser(data);
+    // .subscribe(() => { }, error => this.errorMessage = <any>error);
   }
 
 }
